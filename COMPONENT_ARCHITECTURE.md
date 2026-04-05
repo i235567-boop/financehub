@@ -494,5 +494,3 @@ All routes wrapped in:
 ```
 
 ---
-
-**Use this structure for your explanation document diagrams!**
