@@ -1,0 +1,102 @@
+/* Navbar Styles */
+.navbar {
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.navbar-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 64px;
+}
+
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #1a56db;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar-logo:hover {
+  color: #1e429f;
+}
+
+.navbar-menu {
+  display: flex;
+  gap: 8px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+}
+
+.navbar-link {
+  padding: 8px 16px;
+  color: #4b5563;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s;
+  font-weight: 500;
+  position: relative;
+}
+
+.navbar-link:hover {
+  background-color: #f3f4f6;
+  color: #1f2937;
+}
+
+.navbar-link.active {
+  background-color: #eff6ff;
+  color: #1a56db;
+}
+
+.navbar-portfolio {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.portfolio-badge {
+  background-color: #dc2626;
+  color: white;
+  font-size: 0.75rem;
+  padding: 2px 6px;
+  border-radius: 10px;
+  min-width: 20px;
+  text-align: center;
+  animation: scaleIn 0.2s ease;
+}
+
+@keyframes scaleIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .navbar-menu {
+    gap: 4px;
+  }
+  
+  .navbar-link {
+    padding: 6px 12px;
+    font-size: 0.875rem;
+  }
+  
+  .navbar-logo {
+    font-size: 1.25rem;
+  }
+}
