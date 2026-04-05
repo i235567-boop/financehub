@@ -175,149 +175,6 @@ aggressive users → sort by highest return first
 - UI states (loading, editing, errors)
 - Search queries
 
-## 🧪 Testing the Application
-
-### Viva Preparation - Key Questions
-
-1. **Component Architecture**
-   - Why Context API for portfolio vs prop drilling?
-   - How does data flow from ProductList to ProductCard?
-
-2. **Financial Logic**
-   - Explain risk-to-return mapping
-   - How does profile affect recommendations?
-   - Walk through weighted return calculation
-
-3. **Filtering Logic**
-   - How do filters combine? (AND logic)
-   - What happens when no products match?
-
-4. **API Integration**
-   - Explain transformation function line by line
-   - How is data consistency ensured?
-
-### Live Modification Examples
-
-Ready to demonstrate:
-- Change risk mapping (e.g., aggressive → high risk only)
-- Add new filter criteria
-- Modify recommendation sorting
-- Update portfolio constraints
-
-## 📦 Deployment
-
-### Option 1: Vercel (Recommended)
-
-1. **Create Vercel account** at [vercel.com](https://vercel.com)
-
-2. **Connect GitHub repository**
-   - Click "New Project"
-   - Import your GitHub repository
-   - Vercel will auto-detect Vite config
-
-3. **Deploy**
-   - Click "Deploy"
-   - Wait for build to complete
-   - Your app will be live at `https://your-project.vercel.app`
-
-### Option 2: Netlify
-
-1. **Create Netlify account** at [netlify.com](https://netlify.com)
-
-2. **Connect repository**
-   - Click "New site from Git"
-   - Select your GitHub repository
-   - Build command: `npm run build` or `pnpm build`
-   - Publish directory: `dist`
-
-3. **Deploy**
-   - Click "Deploy site"
-   - Your app will be live at `https://your-project.netlify.app`
-
-### Option 3: GitHub Pages
-
-1. **Install gh-pages**
-   ```bash
-   npm install --save-dev gh-pages
-   ```
-
-2. **Add scripts to package.json**
-   ```json
-   {
-     "scripts": {
-       "predeploy": "npm run build",
-       "deploy": "gh-pages -d dist"
-     },
-     "homepage": "https://<username>.github.io/<repository>"
-   }
-   ```
-
-3. **Deploy**
-   ```bash
-   npm run deploy
-   ```
-
-4. **Configure GitHub Pages**
-   - Go to repository settings
-   - Pages section → Source: gh-pages branch
-
-## 📸 Screenshots Guide
-
-### When to Take Screenshots
-
-1. **Initial Commit** - After first setup
-   ```bash
-   git add .
-   git commit -m "Initial project setup with React and routing"
-   ```
-
-2. **Component Creation** - After creating each major component
-   ```bash
-   git add src/app/components/
-   git commit -m "Add reusable components: ProductCard, FilterPanel, RiskBadge"
-   ```
-
-3. **Context Implementation** - After creating contexts
-   ```bash
-   git add src/app/contexts/
-   git commit -m "Implement UserProfile and Portfolio context providers"
-   ```
-
-4. **Pages Development** - After completing each page
-   ```bash
-   git add src/app/pages/Home.*
-   git commit -m "Implement Home page with featured products"
-   ```
-
-5. **Financial Logic** - After implementing core logic
-   ```bash
-   git add src/app/utils/
-   git commit -m "Add financial calculation utilities and recommendation algorithm"
-   ```
-
-6. **Styling** - After major styling updates
-   ```bash
-   git add src/app/**/*.css
-   git commit -m "Complete responsive styling for all pages"
-   ```
-
-7. **Bug Fixes** - Document any fixes
-   ```bash
-   git commit -m "Fix portfolio calculation for edge cases"
-   ```
-
-8. **Final Deployment** - After successful deployment
-   ```bash
-   git commit -m "Update README with deployment URL"
-   ```
-
-### Screenshot Checklist
-- [ ] Git commit history showing 15+ commits
-- [ ] All 7 pages (Home, Products, Detail, Profile, Recommendations, Portfolio, 404)
-- [ ] Filter functionality in action
-- [ ] Portfolio with calculations
-- [ ] Responsive design on mobile
-- [ ] Profile form with validation
 
 ## 🎓 Learning Outcomes Achieved
 
@@ -330,7 +187,9 @@ Ready to demonstrate:
 ✅ **Conditional Rendering**: UI based on state and profile  
 ✅ **Filter Logic**: Multi-criteria filtering system  
 
-## 🤝 Contributing
+## 🤝 Acknowledgments
+
+This project was developed under the supervision of Professor Arsalan Khan as part of the Web Programming Course at FAST NUCES Islamabad.
 
 This is an academic project. Contributions are not accepted.
 
@@ -340,10 +199,10 @@ This project is for educational purposes only.
 
 ## 👨‍💻 Author
 
-**Your Name**  
-Student ID: [Your ID]  
-Course: [Course Name]  
-Semester: [Semester]
+**Sumyyah Saeed**  
+Student ID: 23i-5567  
+Course: Web Programming  
+Semester: 6th
 
 ---
 
