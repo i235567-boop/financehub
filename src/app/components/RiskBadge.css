@@ -1,0 +1,44 @@
+/* Risk Badge Styles */
+.risk-badge {
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 500;
+  text-align: center;
+  transition: transform 0.2s;
+}
+
+.risk-badge-small {
+  font-size: 0.75rem;
+  padding: 2px 8px;
+}
+
+.risk-badge-medium {
+  font-size: 0.875rem;
+  padding: 4px 12px;
+}
+
+.risk-badge-large {
+  font-size: 1rem;
+  padding: 6px 16px;
+}
+
+/* Risk level colors - green, yellow, red */
+.risk-low {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.risk-medium {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.risk-high {
+  background-color: #fee2e2;
+  color: #991b1b;
+}
+
+.risk-badge:hover {
+  transform: scale(1.05);
+}
